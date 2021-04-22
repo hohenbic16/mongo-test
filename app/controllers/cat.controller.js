@@ -13,8 +13,8 @@ exports.create = (req, res) => {
     const cat = new Cat({
         name: req.body.name,
         owner: req.body.owner || "Michi",
-        color: req.body.color
-        unique-sound: req.body.unique-sound, 
+        color: req.body.color,
+        unique_sound: req.body.unique_sound, 
         superpower: req.body.superpower || "none :("
     });
 
