@@ -33,7 +33,7 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     Cat.find()
         .then(cats => {
-            res.send(cats);
+            res.send("Here are the cats: " + cats);
         }).catch(err => {
         res.status(500).send({
             message: err.message || "Some error occurred while retrieving cats."
