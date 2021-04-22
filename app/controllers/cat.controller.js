@@ -12,7 +12,7 @@ exports.create = (req, res) => {
     // Create a Cat
     const cat = new Cat({
         name: req.body.name,
-        owner: req.body.owner || "Michi",
+        owner: req.body.owner,
         color: req.body.color,
         unique_sound: req.body.unique_sound, 
         superpower: req.body.superpower || "none :("
