@@ -14,6 +14,8 @@ exports.create = (req, res) => {
         name: req.body.name,
         owner: req.body.owner || "Michi",
         color: req.body.color
+        unique-sound: req.body.unique-sound, 
+        superpower: req.body.superpower || "none :("
     });
 
     // Save Cat in the database
