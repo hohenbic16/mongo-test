@@ -5,7 +5,7 @@ module.exports = (app) => {
     app.post('/cat', cat.create);
 
     // Retrieve all Cats
-    //app.get('/cat', cat.findAll);
+    app.get('/cat', cat.findAll);
 
     // Retrieve a single Cat with catId
     app.get('/cat/:catId', cat.findOne);
@@ -16,6 +16,4 @@ module.exports = (app) => {
     // Delete a Cat with catId
     app.delete('/cat/:catId', cat.delete);
 
-    //Show Number of Cats
-    app.get('/cat', cat.CountAll)
 }

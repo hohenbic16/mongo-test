@@ -119,9 +119,4 @@ exports.delete = (req, res) => {
     });
 };
 
-//Count all cats in the Database
-exports.CountAll = (req, res) => {
-    res.send(db.restaurants.count())
-
-}
 
