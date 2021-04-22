@@ -33,7 +33,7 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     Cat.find()
         .then(cats => {
-            res.send("Here are the cats: " + cats);
+            res.send(cats);
         }).catch(err => {
         res.status(500).send({
             message: err.message || "Some error occurred while retrieving cats."
@@ -118,3 +118,10 @@ exports.delete = (req, res) => {
         });
     });
 };
+
+//Count all cats in the Database
+exports.CountAll = (req, res) => {
+    res.send(db.restaurants.count())
+
+}
+

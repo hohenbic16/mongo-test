@@ -15,4 +15,7 @@ module.exports = (app) => {
 
     // Delete a Cat with catId
     app.delete('/cat/:catId', cat.delete);
+
+    //Show Number of Cats
+    app.get('/cat', cat.CountAll)
 }
